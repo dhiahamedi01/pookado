@@ -1,0 +1,45 @@
+.carousel_container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    margin-top: 100px;
+  }
+  
+  .carousel {
+    display: inline-flex;
+    white-space: nowrap;
+    animation: move 28s linear infinite;
+  }
+  
+  .carousel_image {
+    width: auto;
+    height: 60px; 
+    object-fit: cover;
+  }
+  
+  @keyframes move {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  @media (max-width: 1024px) {
+    .carousel_image {
+      height: 50px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .carousel_image {
+      height: 40px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .carousel_image {
+      height: 30px;
+    }
+  }
+  

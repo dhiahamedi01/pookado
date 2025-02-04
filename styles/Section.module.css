@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+.section{
+    width: 100%;
+    height: 30vh;
+    background: linear-gradient(to bottom, white, #FFF0E5);
+}
+.section2{
+    width: 100%;
+    height: auto;
+    background-color: #FFF0E5;
+    padding: 40px;
+}
+.titre{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 110px;
+}
+.titre h3{
+    font-size: 50px;
+    font-family: "Bubblegum Sans", serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #EB1551;text-align: center;
+    font-size: 28px;
+    text-align: left !important;
+}
+.round{
+    height: 40px !important;
+    width: 40px !important;
+    animation: moveLeftRight 3s infinite ease-in-out; 
+}
+@keyframes moveLeftRight {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-20px); 
+    }
+    100% {
+        transform: translateX(0); 
+    }
+}
+.round2{
+    height: 50px !important;
+    width: 50px !important;
+    animation: moveUpDown 3s infinite ease-in-out; 
+    position: relative;
+    top: -150px;
+    left: -420px;
+}
+@keyframes moveUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px); 
+    }
+    100% {
+      transform: translateY(0); 
+    }
+  }
+
+
+.titre p{
+    margin-top: 20px;
+    color: rgb(37, 37, 37);
+    font-family: "Bubblegum Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+.block{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 150px;
+}
+.partie1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.partie2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between !important;
+}
+.globale{
+    height: 100%;
+    width: 100%;
+}
+.line{
+    width: 100%;
+    margin-bottom: 550px !important;
+    position: relative;
+}
+.titre{
+    width: 60% !important;
+}
+.image{
+    width: 40% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+.image img{
+    height: auto;
+    width: 270px;
+}
+.rocket{
+    height: auto;
+    width: 140px !important;
+    animation: moveUpDown 3s infinite ease-in-out; 
+}
+@keyframes moveUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px); 
+    }
+    100% {
+      transform: translateY(0); 
+    }
+  }
+
+.partie1 img{
+    height: auto;
+    width: 500px;
+}
+.desc{
+    color: #6B6B84;
+    margin-top: 12px;
+    font-size: 15px;
+}
+.btn{
+    width: 150px;
+    border-radius: 18px;
+    height: 40px;
+    background-color: #EB1551;
+    border: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 25px;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+}
+@media screen and (max-width: 1024px) {
+    .block {
+        flex-direction: column;
+        padding-inline: 50px;
+        height: auto;
+    }
+    .partie1 img {
+        width: 400px;
+    }
+    .titre p {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .titre {
+        width: 100% !important;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        margin-top: 0;
+        justify-content: center;
+    }
+    .h3{
+        text-align: center;
+    }
+    .block {
+        padding-inline: 20px;
+    }
+    .image{
+        display: none !important;
+    }
+    .line{
+        display: none;
+    }
+    .image img {
+        width: 200px;
+    }
+    .rocket {
+        width: 100px !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .titre h3 {
+        font-size: 24px;
+    }
+    .titre p {
+        font-size: 20px;
+    }
+    .partie1 img {
+        width: 300px;
+    }
+    .image img {
+        width: 150px;
+    }
+    .btn {
+        width: 120px;
+        height: 35px;
+        font-size: 13px;
+    }
+}

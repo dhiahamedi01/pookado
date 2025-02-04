@@ -1,0 +1,17 @@
+.modal {
+    position: fixed;
+    bottom: 220px;
+    right: 65px;
+    width: 300px;  /* Vous pouvez ajuster la taille ici */
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 16px;
+    z-index: 9999; /* Assurez-vous que le modal est au-dessus de tout autre contenu */
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 9998; /* Couverture sombre */
+
+  }
+  
