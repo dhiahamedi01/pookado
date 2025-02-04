@@ -31,7 +31,7 @@ export default function Nav(){
           <div className={Style.items}>
                <ul>
                 <li className={Style.active}>
-                <Image src="/img/icon.png" alt="#" className={Style.heroImage} width={28} height={28}  />&ensp;Home
+                <Image src="/img/menu-hover-icon.png" alt="#" className={Style.heroImage} width={28} height={28}  />&ensp;Home
                 </li>
                 <li>item 1</li>
                 <li>item 2</li>
